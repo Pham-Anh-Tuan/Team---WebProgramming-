@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ /*Phần menu1: Logo và thanh tìm kiếm*/
+.header-main .header-menu .container {
+    width: 1000px;
+    margin: 0 auto;
+
+
+}
+.header-main .header-menu .container .header-menu-top {
+    margin-top: 40px;
+    display: block;
+    height: 52px;
+}
+.header-main .header-menu .container .header-menu-top .mobile-logo {
+    float: left;
+    width: 16.66666667%;
+
+}
+.header-main .header-menu .container .header-menu-top .mobile-logo img {
+    max-width: 120px;
+
+    /*margin-top: -10px;*/
+    /*position: relative;*/
+}
+.header-main .header-menu .container .header-menu-top .search {
+    float: left;
+    width: 83%;
+}
+.header-main .header-menu .container .header-menu-top .search .search-bar1 {
+    float: left;
+    width: 70%;
+    height: 40px;
+}
+.header-main .header-menu .container .header-menu-top .search .search-btn {
+    float: left;
+    width: 5%;
+    height: 40px;
+}
+/*Phần menu2: các item trong menu*/
+
+.header-main .header-menu .container .main-menu {
+    display: block;
+}
+.clearfix:after {
+    display: block;
+
+}
+
+.wrapper {
+
+}
+
+.menu {
+    width: 100%;
+    /*margin: 0px auto;*/
+    height: 30px;
+    border-bottom: #8b0000 solid 3px;
+}
+
+.menu li {
+    margin: 0px;
+    list-style: none;
+    font-family: Helvetica, sans-serif;
+}
+
+.menu a {
+    /*transition: all linear 0.15s;*/
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.menu li:hover > a {
+    color: white;
+    font-weight: bold;
+}
+
+.menu .arrow {
+    font-size: 11px;
+}
+/*----- css cho các phần menu -----*/
+.menu > ul > li {
+    float: left;
+    display: inline-block;
+    position: relative;
+    font-size: 19px;
+    height: 33px;
+    margin-left: 36px;
+}
+.menu > ul > li > a {
+    padding-left: 0px;
+    display: inline-block;
+    color: black;
+
+}
+.menu > ul > li:hover {
+    background: #8b0000;
+}
+
+.menu > ul > li:hover > a, .menu > ul > .sub-menu > a {
+    background: #8b0000;
+}
+
+/*----css cho những item menu con----*/
+.menu li:hover .sub-menu {
+    z-index: 1;
+    opacity: 1;
+    margin-top: 0px;
+}
+
+.sub-menu {
+    width: 130%;
+    padding: 0px 0px;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    background: #eeeeee;
+}
+
+.sub-menu li {
+    margin: 0px;
+    display: block;
+    font-size: 16px;
+}
+
+.sub-menu li a {
+    padding: 10px 30px;
+    display: block;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background: #8b0000;
+}
+
+
+
+
