@@ -1,49 +1,83 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Quicksand', sans-serif;
 }
- /*Phần menu1: Logo và thanh tìm kiếm*/
+/*css cho chữ đăng nhập và đăng kí*/
+.container .log {
+    display: block;
+    width: 1000px;
+    height: 10px;
+}
+.container .log .log_in_out {
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.container .log .log_in_out:hover {
+    color: #0abcff;
+}
+.container .log_in_out:not(:first-child) {
+    margin-right: 20px;
+}
+
+/*bắt đầu css cho logo và thanh tìm kiếm*/
 .header-main .header-menu .container {
     width: 1000px;
     margin: 0 auto;
-
-
 }
+
 .header-main .header-menu .container .header-menu-top {
-    margin-top: 40px;
+    margin-top: 20px;
     display: block;
     height: 52px;
 }
+
 .header-main .header-menu .container .header-menu-top .mobile-logo {
     float: left;
     width: 16.66666667%;
-
+    margin-top: -8px;
 }
+
 .header-main .header-menu .container .header-menu-top .mobile-logo img {
     max-width: 120px;
 
     /*margin-top: -10px;*/
     /*position: relative;*/
 }
+
 .header-main .header-menu .container .header-menu-top .search {
     float: left;
     width: 83%;
 }
+
 .header-main .header-menu .container .header-menu-top .search .search-bar1 {
     float: left;
-    width: 70%;
+    width: 75%;
     height: 40px;
+    overflow: auto;
 }
+
 .header-main .header-menu .container .header-menu-top .search .search-btn {
     float: left;
+    margin-left: -5%;
     width: 5%;
     height: 40px;
+    background: #57CDFF;
+    border: 1px solid black;
 }
-/*Phần menu2: các item trong menu*/
+
+/*kết thúc css cho logo và thanh tìm kiếm*/
+
+/*bắt đầu css cho menu*/
 
 .header-main .header-menu .container .main-menu {
     display: block;
 }
+
 .clearfix:after {
     display: block;
 
@@ -57,13 +91,14 @@
     width: 100%;
     /*margin: 0px auto;*/
     height: 30px;
-    border-bottom: #8b0000 solid 3px;
+    border-bottom: #57CDFF solid 3px;
 }
 
 .menu li {
     margin: 0px;
     list-style: none;
-    font-family: Helvetica, sans-serif;
+    cursor: pointer;
+    /*font-family: Helvetica, sans-serif;*/
 }
 
 .menu a {
@@ -83,6 +118,7 @@
 .menu .arrow {
     font-size: 11px;
 }
+
 /*----- css cho các phần menu -----*/
 .menu > ul > li {
     float: left;
@@ -92,18 +128,20 @@
     height: 33px;
     margin-left: 36px;
 }
+
 .menu > ul > li > a {
     padding-left: 0px;
     display: inline-block;
     color: black;
 
 }
+
 .menu > ul > li:hover {
-    background: #8b0000;
+    background: #57CDFF;
 }
 
 .menu > ul > li:hover > a, .menu > ul > .sub-menu > a {
-    background: #8b0000;
+    background: #57CDFF;
 }
 
 /*----css cho những item menu con----*/
@@ -137,8 +175,212 @@
 }
 
 .sub-menu li a:hover, .sub-menu .current-item a {
-    background: #8b0000;
+    background: #57CDFF;
 }
+
+/*kết thúc css cho menu*/
+
+/*bắt đầu css cho phần chuyển động ảnh*/
+.slider {
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px auto;
+}
+
+.slides {
+    width: 500%;
+    height: 600px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1000px;
+    height: 600px;
+}
+
+/*!*css for manual slide navigation*!*/
+
+.navigation-manual {
+    position: absolute;
+    width: 1000px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn {
+    border: 2px solid #57CDFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #57CDFF;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+/*css for automatic naviagtion*/
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    margin-top: 560px;
+}
+
+.navigation-auto div {
+    border: 2px solid #57CDFF;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #57CDFF;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #57CDFF;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #57CDFF;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #57CDFF;
+}
+
+/*kết thúc css cho phần chuyển động ảnh*/
+
+/*bắt đầu css cho phần hiển thị các loại sản phẩm*/
+.items {
+    width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-rows: 362px 360px;
+    grid-template-columns: 250px 250px 250px 250px;
+}
+/*.items .item {*/
+/*    margin-left: 13px;*/
+/*}*/
+.sub-title {
+    text-align: center;
+    width: 1000px;
+    margin: 60px auto 0px auto;
+    border-bottom: 3px solid #0abcff;
+    cursor: pointer;
+}
+.item {
+    margin-left: 5px;
+    background-color: white;
+    overflow: hidden;
+    width: 240px;
+    height: 334px;
+    border-radius: 12px;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    box-shadow: 0px 0px 30px 0px lightgray;
+}
+
+.item .product_img {
+    text-decoration: none;
+}
+
+.item .product_img .img_size {
+    width: 240px;
+    height: 240px;
+}
+
+
+.item .product_img .title {
+    color: black;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    margin-top: 5px;
+
+}
+
+.item .price {
+    margin-top: 5px;
+    color: #0abcff;
+}
+
+.item .show_way {
+    margin-top: 5px;
+}
+
+.item .show_way .sizes {
+    display: inline-block;
+    border: 2px solid #57CDFF;
+    border-radius: 6px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.item .show_way .sizes:hover {
+    color: white;
+    background: #57CDFF;
+}
+
+.item .show_way .text {
+    font-size: 12px;
+}
+.add_btn {
+    display: block;
+    width: 260px;
+    height: 34px;
+    background: #57CDFF;
+    margin: 0px auto;
+    border: none;
+    cursor: pointer;
+}
+body > .text {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*kết thúc css cho phần hiển thị các loại sản phẩm */
 
 
 

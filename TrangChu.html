@@ -2,26 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Shop Bán Gấu Bông</title>
+    <title>Three Bear</title>
     <link rel="stylesheet" href="StyleTrangChu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
+
+<!--bắt đầu phần tìm kiếm và menu-->
 <header class="header-main">
     <div class="header-menu">
         <div class="container">
+            <p class="log">
+                <a href="SignIn_Register/RegisterForm.html" class="log_in_out">Đăng kí</a>
+                <a href="SignIn_Register/SignInForm.html" class="log_in_out">Đăng nhập</a>
+            </p>
+
             <div class="header-menu-top clearfix">
+                <!--                bắt đầu phần logo-->
                 <div class="col-sm-2  col-md-2  hidden-xs pd-0  mobile-logo"><a href="https://gaubongcaocap.com"
                                                                                 class="logo"><img
                         src="logo.png"
 
                         alt="Gấu Bông Cao Cấp"></a>
                 </div>
+                <!--                kết thúc phần logo-->
 
+                <!--                bắt đầu phần thanh tìm kiếm -->
                 <div class="search col-sm-10 col-md-10 col-xs-7 pd-0">
-                    <form action="https://gaubongcaocap.com" class="search-bar col-sm-10 col-md-10">
+                    <form action="" class="search-bar col-sm-10 col-md-10">
                         <div class=" col-sm-11 col-md-11 col-xs-12">
                             <input class="search-bar1 hidden-xs" type="search" placeholder="Nhập sản phẩm cần tìm"
                                    value=""
@@ -33,8 +43,9 @@
                         </button>
                     </form>
                 </div>
+                <!--                kết thúc phần thành tìm kiếm-->
             </div>
-
+            <!--            bắt đầu phần menu -->
             <div class="main-menu" id="wrapper">
                 <nav class="menu">
                     <ul class="clearfix">
@@ -56,9 +67,616 @@
                 </nav>
 
             </div>
+            <!--            kết thúc phần menu-->
+
         </div>
     </div>
 </header>
+<!--kết thúc phần tìm kiếm và menu-->
+
+<!--bắt đầu phần chuyển động ảnh -->
+<div class="slider">
+    <div class="container">
+        <div class="slides">
+            <!--        radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--        radio buttons end-->
+            <!--        slide images start-->
+            <div class="slide first">
+                <img src="Images/Auto-play Image/Dãy gấu.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Images/Auto-play Image/Giao hàng.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Images/Auto-play Image/Trao đến tận tay.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="Images/Auto-play Image/Ảnh covid.jpg" alt="">
+            </div>
+            <!--        slide images end-->
+            <!--        automatic navigation start-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!--        automatic navigation end-->
+        </div>
+        <!--    manual navigation start-->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--    manual navigation end-->
+    </div>
+</div>
+<script type="text/javascript">
+    let counter = 1;
+    setInterval(function () {
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if (counter > 4) {
+            counter = 1;
+        }
+    }, 6000);
+</script>
+<!--kết thúc phần chuyển động ảnh-->
+
+<!--bắt đầu phần hiển thị các loại sản phẩm -->
+
+<!--Bắt đầu phần trái cây bông-->
+<h2 class="sub-title"><a>Trái cây bông</a></h2>
+<div class="items">
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Trái cây bông ở trang chủ//image1.jpg"
+                                             alt="Quả bơ gối ôm dài">
+            <h3 class="title">Gấu bông trái bơ mặt thú</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            285.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                70cm
+            </li>
+            <li class="sizes text">
+                80cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Trái cây bông ở trang chủ//image2.jpg"
+                                             alt="Gấu bông cà rốt mặt thú">
+            <h3 class="title">Gấu bông cà rốt mặt thú</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            285.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                60cm
+            </li>
+            <li class="sizes text">
+                70cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Trái cây bông ở trang chủ//image3.jpg"
+                                             alt="Gấu bông trái thơm mặt thú">
+            <h3 class="title">Gấu bông trái thơm mặt thú</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            285.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                80cm
+            </li>
+            <li class="sizes text">
+                90cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Trái cây bông ở trang chủ//image4.jpg"
+                                             alt="Gấu bông trái sầu riêng">
+            <h3 class="title">Gấu bông trái sầu riêng</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            285.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                35cm
+            </li>
+            <!--        <li class="sizes text">-->
+            <!--            90cm-->
+            <!--        </li>-->
+        </ul>
+    </div>
+
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Trái cây bông ở trang chủ//image5.jpg"
+                                             alt="Gấu bông quả bí bông xanh">
+            <h3 class="title">Gấu bông quả bí bông xanh</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            108.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                45cm
+            </li>
+            <li class="sizes text">
+                55cm
+            </li>
+            <li class="sizes text">
+                70cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Trái cây bông ở trang chủ//image6.jpg"
+                                             alt="Nải chuối mặt biểu cảm">
+            <h3 class="title">Nải chuối mặt biểu cảm</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            170.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                30cm
+            </li>
+            <li class="sizes text">
+                45cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Trái cây bông ở trang chủ//image7.jpg"
+                                             alt="Quả bơ bông có lá, má xoắn óc">
+            <h3 class="title">Quả bơ bông có lá, má xoắn óc</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            85.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                35cm
+            </li>
+            <li class="sizes text">
+                48cm
+            </li>
+            <li class="sizes text">
+                75cm
+            </li>
+            <li class="sizes text">
+                90cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Trái cây bông ở trang chủ//image8.jpg"
+                                             alt="Trái bơ bông mặt thú bông">
+            <h3 class="title">Trái bơ bông mặt thú bông</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            225.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                50cm
+            </li>
+        </ul>
+    </div>
+</div>
+
+<button class="add_btn text">Xem thêm</button>
+
+<!--kết thúc phần trái cây bông-->
+
+<!--Bắt đầu phần thú bông-->
+<h2 class="sub-title"><a>Thú bông</a></h2>
+<div class="items">
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Thú bông ở trang chủ//image1.jpg"
+                                             alt="Chó bông Husky lông mịn">
+            <h3 class="title">Chó bông Husky lông mịn</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            432.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                1m2
+            </li>
+            <li class="sizes text">
+                1m5
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Thú bông ở trang chủ//image2.jpg"
+                                             alt="Chó bông Husky ôm Bình sữa">
+            <h3 class="title">Chó bông Husky ôm Bình sữa</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            210.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                40cm
+            </li>
+            <li class="sizes text">
+                50cm
+            </li>
+            <li class="sizes text">
+                60cm
+            </li>
+            <li class="sizes text">
+                75cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Thú bông ở trang chủ//image3.jpg"
+                                             alt="Mèo bông hoàng thượng ngồi">
+            <h3 class="title">Mèo bông hoàng thượng ngồi</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            455.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                50cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Thú bông ở trang chủ//image4.jpg"
+                                             alt="Gối mền Chó bông mặt xệ nằm">
+            <h3 class="title">Gối mền Chó bông mặt xệ nằm</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            340.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                50cm
+            </li>
+            <!--        <li class="sizes text">-->
+            <!--            90cm-->
+            <!--        </li>-->
+        </ul>
+    </div>
+
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Thú bông ở trang chủ//image5.jpg"
+                                             alt="Chó bông nằm mặt xệ lông mịn">
+            <h3 class="title">Chó bông nằm mặt xệ lông mịn</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            230.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                60cm
+            </li>
+            <li class="sizes text">
+                80cm
+            </li>
+            <li class="sizes text">
+                1m
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Thú bông ở trang chủ//image6.jpg"
+                                             alt="Gấu bông khủng long Baby">
+            <h3 class="title">Gấu bông khủng long Baby</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            240.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                80cm
+            </li>
+            <li class="sizes text">
+                1m
+            </li>
+            <li class="sizes text">
+                1m2
+            </li>
+            <li class="sizes text">
+                1m5
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Thú bông ở trang chủ//image7.jpg"
+                                             alt="Chó bông Shiba cosplay">
+            <h3 class="title">Chó bông Shiba cosplay</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            252.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                60cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_Thú bông ở trang chủ//image8.jpg"
+                                             alt="Gối mền Heo bông mũm mĩm">
+            <h3 class="title">Gối mền Heo bông mũm mĩm</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            330.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                50cm
+            </li>
+        </ul>
+    </div>
+</div>
+
+<button class="add_btn text">Xem thêm</button>
+
+<!--kết thúc phần thú bông-->
+
+<!--Bắt đầu phần Gấu bông hoạt hình-->
+<h2 class="sub-title"><a>Gấu bông hoạt hình</a></h2>
+<div class="items">
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size"
+                                             src="Images//Images_Gấu bông hoạt hình ở trang chủ//image1.jpg"
+                                             alt="Gấu bông We bare bear">
+            <h3 class="title">Gấu bông We bare bear</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            165.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                50cm
+            </li>
+            <li class="sizes text">
+                75cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size"
+                                             src="Images//Images_Gấu bông hoạt hình ở trang chủ//image2.jpg"
+                                             alt="Gối mền Unicorn ôm tim">
+            <h3 class="title">Gối mền Unicorn ôm tim</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            435.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                2in1
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size"
+                                             src="Images//Images_Gấu bông hoạt hình ở trang chủ//image3.jpg"
+                                             alt="Gấu bông Doraemon lông nhung">
+            <h3 class="title">Gấu bông Doraemon lông nhung</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            364.500₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                50cm
+            </li>
+            <li class="sizes text">
+                70cm
+            </li>
+            <li class="sizes text">
+                1m
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size"
+                                             src="Images//Images_Gấu bông hoạt hình ở trang chủ//image4.jpg"
+                                             alt="Gấu Brown">
+            <h3 class="title">Gấu Brown</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            170.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                40cm
+            </li>
+            <li class="sizes text">
+                50cm
+            </li>
+            <li class="sizes text">
+                1m
+            </li>
+        </ul>
+    </div>
+
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size"
+                                             src="Images//Images_Gấu bông hoạt hình ở trang chủ//image5.jpg"
+                                             alt="Gấu bông kỳ lân Unicorn Honey">
+            <h3 class="title">Gấu bông kỳ lân Unicorn Honey</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            250.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                40cm
+            </li>
+            <li class="sizes text">
+                50cm
+            </li>
+            <li class="sizes text">
+                60cm
+            </li>
+            <li class="sizes text">
+                75cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size"
+                                             src="Images//Images_Gấu bông hoạt hình ở trang chủ//image6.jpg"
+                                             alt="Ngựa bông Pony">
+            <h3 class="title">Ngựa bông Pony</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            195.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                40cm
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size"
+                                             src="Images//Images_Gấu bông hoạt hình ở trang chủ//image7.jpg"
+                                             alt="Gấu bông pikachu ôm dài">
+            <h3 class="title">Gấu bông pikachu ôm dài</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            250.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                85cm
+            </li>
+            <li class="sizes text">
+                1m1
+            </li>
+            <li class="sizes text">
+                1m3
+            </li>
+            <li class="sizes text">
+                1m5
+            </li>
+        </ul>
+    </div>
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size"
+                                             src="Images//Images_Gấu bông hoạt hình ở trang chủ//image8.jpg"
+                                             alt="Shin mặc áo Hoodie">
+            <h3 class="title">Shin mặc áo Hoodie</h3>
+        </a>
+        <!--giá cả-->
+        <div class="price">
+            95.000₫
+        </div>
+        <!--    kích thước -->
+        <ul class="show_way">
+            <li class="sizes text">
+                25cm
+            </li>
+            <li class="sizes text">
+                45cm
+            </li>
+            <li class="sizes text">
+                55cm
+            </li>
+        </ul>
+    </div>
+</div>
+
+<button class="add_btn text">Xem thêm</button>
+
+<!--kết thúc phần Gấu bông hoạt hình-->
+
+<!--kết thúc phần hiển thị các loại sản phẩm-->
 
 </body>
 </html>
