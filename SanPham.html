@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sản phẩm - Three Bears</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="StyleSanPham.css">
+</head>
+<body>
+<!--bắt đầu phần tìm kiếm và menu-->
+<header class="header-main">
+    <div class="header-menu">
+        <div class="container">
+            <p class="log">
+                <a href="SignIn_Register/RegisterForm.html" class="log_in_out">Đăng kí</a>
+                <a href="SignIn_Register/SignInForm.html" class="log_in_out">Đăng nhập</a>
+            </p>
+
+            <div class="header-menu-top clearfix">
+                <!--                bắt đầu phần logo-->
+                <div class="col-sm-2  col-md-2  hidden-xs pd-0  mobile-logo"><a href="https://gaubongcaocap.com"
+                                                                                class="logo"><img
+                        src="logo.png"
+
+                        alt="Gấu Bông Cao Cấp"></a>
+                </div>
+                <!--                kết thúc phần logo-->
+
+                <!--                bắt đầu phần thanh tìm kiếm -->
+                <div class="search col-sm-10 col-md-10 col-xs-7 pd-0">
+                    <form action="" class="search-bar col-sm-10 col-md-10">
+                        <div class=" col-sm-11 col-md-11 col-xs-12">
+                            <input class="search-bar1 hidden-xs" type="search" placeholder="Nhập sản phẩm cần tìm"
+                                   value=""
+                                   name="s"
+                                   autocomplete="off">
+                        </div>
+                        <button type="submit" class="btn search-btn col-sm-1 col-md-1 hidden-xs">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <!--                kết thúc phần thành tìm kiếm-->
+            </div>
+            <!--            bắt đầu phần menu -->
+            <div class="main-menu" id="wrapper">
+                <nav class="menu">
+                    <ul class="clearfix">
+                        <li style="margin-left: 0px"><a href="#"> TRANG CHỦ </a></li>
+                        <li>
+                            <a> TRÁI CÂY BÔNG <span class="arrow">&#9660;</span> </a>
+                            <ul class="sub-menu">
+                                <li><a href="#"> BƠ </a></li>
+                                <li><a href="#"> CÀ RỐT </a></li>
+                                <li><a href="#"> CHUỐI </a></li>
+                                <li><a href="#"> DƯA HẤU </a></li>
+                                <li><a href="#"> DÂU </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a> THÚ BÔNG <span class="arrow">&#9660;</span> </a>
+                            <ul class="sub-menu">
+                                <li><a href="#"> CHUỘT </a></li>
+                                <li><a href="#"> MÈO </a></li>
+                                <li><a href="#"> KHỦNG LONG </a></li>
+                                <li><a href="#"> CHÓ </a></li>
+                                <li><a href="#"> HEO </a></li>
+                                <li><a href="#"> VOI </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="HoatHinh.html"> GẤU BÔNG HOẠT HÌNH <span class="arrow">&#9660;</span> </a>
+                            <ul class="sub-menu">
+                                <li><a href="#"> PIKACHU </a></li>
+                                <li><a href="#"> DORAEMON </a></li>
+                                <li><a href="#"> CHÓ HUSKY </a></li>
+                                <li><a href="#"> UNICORN </a></li>
+                                <li><a href="#"> CẬU BÉ SHIN </a></li>
+                                <li><a href="#"> GẤU BROWN </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"> LIÊN HỆ </a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <!--            kết thúc phần menu-->
+        </div>
+        <!--            bắt đầu phần đường kẻ dưới menu-->
+        <div class="line_menu">
+
+        </div>
+        <!--            kết thúc phần đường kẻ dưới menu-->
+    </div>
+</header>
+<!--kết thúc phần tìm kiếm và menu-->
+
+<!--bắt đầu phần ảnh các cam kết (dưới menu)-->
+<div id="four_commit">
+    <div class="container_commit">
+        <div class="edit_image">
+            <img class="size" width="160px" height="34px" src="Images//Images_CamKetCuaTrangWeb//image1.png" alt="Đổi trả 3 ngày">
+        </div>
+        <div class="edit_image">
+            <img class="size" width="204px" height="34px" src="Images//Images_CamKetCuaTrangWeb//image2(edited).png" alt="Bảo hành vĩnh viễn">
+        </div>
+        <div class="edit_image">
+            <img class="size" width="232px" height="34px" src="Images//Images_CamKetCuaTrangWeb//image3.png" alt="Giao hàng toàn quốc">
+        </div>
+        <div class="edit_image">
+            <img class="size" width="169px" height="34px" src="Images//Images_CamKetCuaTrangWeb//image4.png" alt="100% gòn tinh khiết">
+        </div>
+    </div>
+</div>
+<!--kết thúc phần ảnh các cam kết (dưới menu)-->
+
+<!--bắt đầu phần chi tiết sản phẩm-->
+<div id="detail">
+    <div class="item">
+        <!--ảnh của sản phẩm -->
+        <a href="#" class="product_img"><img class="img_size" src="Images//Images_TraiCayBongOTrangChu//image1.jpg"
+                                             alt="Quả bơ gối ôm dài">
+        </a>
+        <h3 class="title">Gấu bông trái bơ mặt thú</h3>
+        <!--    &lt;!&ndash;giá cả&ndash;&gt;-->
+        <!--    <div class="price">-->
+        <!--        285.000₫-->
+        <!--    </div>-->
+        <!--    &lt;!&ndash;    kích thước &ndash;&gt;-->
+        <!--    <ul class="show_way">-->
+        <!--        <li class="sizes text">-->
+        <!--            70cm-->
+        <!--        </li>-->
+        <!--        <li class="sizes text">-->
+        <!--            80cm-->
+        <!--        </li>-->
+        <!--    </ul>-->
+    </div>
+</div>
+<!--kết thúc phần chi tiết sản phẩm-->
+
+
+</body>
+</html>
